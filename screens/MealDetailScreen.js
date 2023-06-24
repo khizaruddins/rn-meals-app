@@ -13,7 +13,7 @@ const MealDetailScreen = ({route, navigation}) => {
   }
   useLayoutEffect(() => {
     navigation.setOptions({
-      headerRight: () =>  <IconButton icon="star" color="white" onIconPressed={handleHeaderPress} />
+      headerRight: () =>  <IconButton icon="star-outline" color="white" onIconPressed={handleHeaderPress} />
     });
   }, [navigation, handleHeaderPress]);
   const mealId = route.params.id;
